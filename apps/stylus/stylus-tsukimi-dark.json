@@ -1,0 +1,181 @@
+[
+  {
+    "settings": {
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
+      "newStyleAsUsercss": false,
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "patchCsp": false,
+      "show-badge": true,
+      "styleViaASS": false,
+      "styleViaXhr": false,
+      "urlInstaller": true,
+      "windowPosition": {},
+      "compactWidth": 850,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": false,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.links.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.options.style.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "rgba(170, 192, 152, 1)",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popup.search.globals": false,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1765662263663,
+    "name": "youtube-tsukimi-dark",
+    "sections": [
+      {
+        "code": "html[dark],\n:root[dark],\nytd-app[dark] {\n  /* Core surfaces */\n  --yt-spec-base-background: #0d0e12 !important;             /* background / surface */\n  --yt-spec-general-background-a: #0d0e12;\n  --yt-spec-general-background-b: #0a0b0f;         /* surfaceVariant */\n  --yt-spec-general-background-c: #0a0b0f;\n\n  --yt-spec-raised-background: #161a22;            /* surfaceContainerHigh */\n  --yt-spec-menu-background: #161a22;\n  --yt-spec-brand-background-solid: #161a22;\n\n  /* Overlays / sheets */\n  --yt-spec-themed-overlay-background: rgba(13, 14, 18, 0.82);\n  --yt-spec-overlay-background-heavy: rgba(13, 14, 18, 0.85);\n  --yt-spec-overlay-background-medium: rgba(13, 14, 18, 0.65);\n  --yt-spec-overlay-background-medium-light: rgba(13, 14, 18, 0.35);\n  --yt-spec-overlay-background-light: rgba(13, 14, 18, 0.18);\n  --yt-spec-overlay-background-extra-light: rgba(13, 14, 18, 0.08);\n\n  /* Text */\n  --yt-spec-text-primary: #f0ebe5;                 /* surfaceText */\n  --yt-spec-text-secondary: #b8b3aa;               /* surfaceVariantText */\n  --yt-spec-text-disabled: rgba(184, 179, 170, 0.55);\n\n  --yt-spec-overlay-text-primary: #f0ebe5;\n  --yt-spec-overlay-text-secondary: rgba(240, 235, 229, 0.75);\n  --yt-spec-overlay-text-disabled: rgba(240, 235, 229, 0.35);\n\n  /* Icons */\n  --yt-spec-icon-active-other: #f0ebe5;\n  --yt-spec-icon-inactive: rgba(240, 235, 229, 0.62);\n  --yt-spec-icon-disabled: rgba(240, 235, 229, 0.35);\n\n  --yt-spec-overlay-icon-active-other: #f0ebe5;\n  --yt-spec-overlay-icon-inactive: rgba(240, 235, 229, 0.70);\n  --yt-spec-overlay-icon-disabled: rgba(240, 235, 229, 0.35);\n\n  /* Borders / outlines */\n  --yt-spec-outline: rgba(37, 42, 54, 0.85);       /* outline */\n  --yt-spec-outline-opaque: #252A36;\n\n  /* Buttons / chips / tonal surfaces */\n  --yt-spec-10-percent-layer: rgba(205, 177, 149, 0.10); /* primary @ 10% */\n  --yt-spec-badge-chip-background: rgba(205, 177, 149, 0.10);\n  --yt-spec-verified-badge-background: rgba(205, 177, 149, 0.22);\n  --yt-spec-button-chip-background-hover: rgba(205, 177, 149, 0.18);\n  --yt-spec-mono-tonal-hover: rgba(205, 177, 149, 0.16);\n\n  /* Links / accents */\n  --yt-spec-call-to-action: #cdb195;               /* primary */\n  --yt-spec-call-to-action-hover: #d7c2ab;         /* slightly lighter */\n  --yt-spec-call-to-action-faded: rgba(205, 177, 149, 0.30);\n\n  /* “Suggested action” surfaces (like selected filters) */\n  --yt-spec-suggested-action: #252A36;             /* primaryContainer-ish */\n  --yt-spec-suggested-action-inverse: #f0ebe5;\n\n  /* Feedback colors */\n  --yt-spec-error-indicator: #aa7a6a;              /* error */\n  --yt-spec-error-background-red: rgba(170, 122, 106, 0.20);\n  --yt-spec-incorrect-indicator: #aa7a6a;\n\n  /* Optional brand-ish accents */\n  --yt-spec-brand-red-contrast: #aa7a6a;           /* keep YouTube “red” muted */\n  --yt-spec-red-indicator: #aa7a6a;\n\n  /* Frosted glass */\n  --yt-frosted-glass-mobile: rgba(13, 14, 18, 0.70);\n  --yt-frosted-glass-desktop: rgba(13, 14, 18, 0.80);\n\n  /* Snackbars */\n  --yt-spec-snackbar-background: #0a0b0f;\n}",
+        "urlPrefixes": [
+          "https://www.youtube.com/"
+        ]
+      }
+    ],
+    "updateDate": 1765664618584,
+    "_id": "762c4cfc-8c7a-4093-90cc-1fd4f7142ff9",
+    "_rev": 1765664618584,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1765662658853,
+    "id": 2,
+    "name": "chatgpt-tsukimi-dark",
+    "sections": [
+      {
+        "code": "/* Tsukimi Theme for ChatGPT - Stylus Override */\n\n.dark {\n  /* ========= Backgrounds ========= */\n  --bg-primary: #0d0e12 !important;\n  --bg-primary-inverted: #f0ebe5 !important;\n  --bg-secondary: #0a0b0f !important;\n  --bg-tertiary: #161a22 !important;\n  --bg-scrim: rgba(13, 14, 18, 0.5) !important;\n\n  --bg-elevated-primary: #161a22 !important;\n  --bg-elevated-secondary: #0a0b0f !important;\n\n  --bg-accent-static: #cdb195 !important;\n\n  --bg-status-warning: rgba(170, 122, 106, 0.25) !important;\n  --bg-status-error: rgba(170, 122, 106, 0.35) !important;\n\n  /* ========= Borders ========= */\n  --border-default: rgba(37, 42, 54, 0.85) !important;\n  --border-heavy: rgba(205, 177, 149, 0.45) !important;\n  --border-light: rgba(37, 42, 54, 0.45) !important;\n\n  --border-status-warning: #aa7a6a !important;\n  --border-status-error: #aa7a6a !important;\n\n  /* ========= Text ========= */\n  --text-primary: #f0ebe5 !important;\n  --text-secondary: #e3ded8 !important;\n  --text-tertiary: #b8b3aa !important;\n\n  --text-inverted: #0d0e12 !important;\n  --text-inverted-static: #f0ebe5 !important;\n\n  --text-accent: #cdb195 !important;\n  --text-status-warning: #cdb195 !important;\n  --text-status-error: #aa7a6a !important;\n\n  /* ========= Icons ========= */\n  --icon-primary: #f0ebe5 !important;\n  --icon-secondary: #d6d1cb !important;\n  --icon-tertiary: #b8b3aa !important;\n\n  --icon-inverted: #0d0e12 !important;\n  --icon-inverted-static: #f0ebe5 !important;\n\n  --icon-accent: #cdb195 !important;\n  --icon-status-warning: #cdb195 !important;\n  --icon-status-error: #aa7a6a !important;\n\n  /* ========= Interactive – Primary ========= */\n  --interactive-bg-primary-default: #cdb195 !important;\n  --interactive-bg-primary-hover: #d9c3ab !important;\n  --interactive-bg-primary-press: #c1a98f !important;\n  --interactive-bg-primary-inactive: #cdb195 !important;\n  --interactive-bg-primary-selected: #cdb195 !important;\n\n  /* ========= Interactive – Secondary ========= */\n  --interactive-bg-secondary-default: transparent !important;\n  --interactive-bg-secondary-hover: rgba(205, 177, 149, 0.14) !important;\n  --interactive-bg-secondary-press: rgba(205, 177, 149, 0.08) !important;\n  --interactive-bg-secondary-inactive: transparent !important;\n  --interactive-bg-secondary-selected: rgba(205, 177, 149, 0.14) !important;\n\n  /* ========= Interactive – Tertiary ========= */\n  --interactive-bg-tertiary-default: #0d0e12 !important;\n  --interactive-bg-tertiary-hover: #0a0b0f !important;\n  --interactive-bg-tertiary-press: #06070a !important;\n  --interactive-bg-tertiary-inactive: #0d0e12 !important;\n  --interactive-bg-tertiary-selected: #0d0e12 !important;\n\n  /* ========= Interactive – Accent ========= */\n  --interactive-bg-accent-default: #252A36 !important;\n  --interactive-bg-accent-hover: #2f3546 !important;\n  --interactive-bg-accent-muted-hover: rgba(37, 42, 54, 0.7) !important;\n  --interactive-bg-accent-muted-context: rgba(37, 42, 54, 0.45) !important;\n  --interactive-bg-accent-press: #1e2330 !important;\n  --interactive-bg-accent-muted-press: rgba(37, 42, 54, 0.85) !important;\n  --interactive-bg-accent-inactive: #252A36 !important;\n\n  /* ========= Interactive – Danger ========= */\n  --interactive-bg-danger-primary-default: #aa7a6a !important;\n  --interactive-bg-danger-primary-hover: #b98878 !important;\n  --interactive-bg-danger-primary-press: #91685b !important;\n  --interactive-bg-danger-primary-inactive: #aa7a6a !important;\n\n  --interactive-bg-danger-secondary-default: transparent !important;\n  --interactive-bg-danger-secondary-hover: rgba(170, 122, 106, 0.18) !important;\n  --interactive-bg-danger-secondary-press: rgba(170, 122, 106, 0.12) !important;\n  --interactive-bg-danger-secondary-inactive: transparent !important;\n\n  /* ========= Interactive – Borders ========= */\n  --interactive-border-focus: #cdb195 !important;\n\n  --interactive-border-secondary-default: rgba(37, 42, 54, 0.85) !important;\n  --interactive-border-secondary-hover: rgba(205, 177, 149, 0.45) !important;\n  --interactive-border-secondary-press: rgba(205, 177, 149, 0.65) !important;\n  --interactive-border-secondary-inactive: rgba(37, 42, 54, 0.45) !important;\n\n  --interactive-border-tertiary-default: rgba(37, 42, 54, 0.45) !important;\n  --interactive-border-tertiary-hover: rgba(37, 42, 54, 0.65) !important;\n  --interactive-border-tertiary-press: rgba(37, 42, 54, 0.45) !important;\n  --interactive-border-tertiary-inactive: rgba(37, 42, 54, 0.45) !important;\n\n  --interactive-border-danger-secondary-default: #aa7a6a !important;\n  --interactive-border-danger-secondary-hover: #b98878 !important;\n  --interactive-border-danger-secondary-press: #91685b !important;\n  --interactive-border-danger-secondary-inactive: #aa7a6a !important;\n\n  /* ========= Labels ========= */\n  --interactive-label-primary-default: #0d0e12 !important;\n  --interactive-label-primary-hover: #0d0e12 !important;\n  --interactive-label-primary-press: #0d0e12 !important;\n  --interactive-label-primary-inactive: #0d0e12 !important;\n  --interactive-label-primary-selected: #0d0e12 !important;\n\n  --interactive-label-secondary-default: #f0ebe5 !important;\n  --interactive-label-secondary-hover: #f6f1eb !important;\n  --interactive-label-secondary-press: #ebe5df !important;\n  --interactive-label-secondary-inactive: #f0ebe5 !important;\n  --interactive-label-secondary-selected: #f0ebe5 !important;\n\n  --interactive-label-tertiary-default: #b8b3aa !important;\n  --interactive-label-tertiary-hover: #b8b3aa !important;\n  --interactive-label-tertiary-press: #b8b3aa !important;\n  --interactive-label-tertiary-inactive: #b8b3aa !important;\n  --interactive-label-tertiary-selected: #b8b3aa !important;\n\n  --interactive-label-accent-default: #cdb195 !important;\n  --interactive-label-accent-hover: #cdb195 !important;\n  --interactive-label-accent-press: #cdb195 !important;\n  --interactive-label-accent-inactive: #cdb195 !important;\n  --interactive-label-accent-selected: #cdb195 !important;\n\n  --interactive-label-danger-primary-default: #f0ebe5 !important;\n  --interactive-label-danger-primary-hover: #f0ebe5 !important;\n  --interactive-label-danger-primary-press: #f0ebe5 !important;\n  --interactive-label-danger-primary-inactive: #f0ebe5 !important;\n\n  --interactive-label-danger-secondary-default: #aa7a6a !important;\n  --interactive-label-danger-secondary-hover: #b98878 !important;\n  --interactive-label-danger-secondary-press: #91685b !important;\n  --interactive-label-danger-secondary-inactive: #aa7a6a !important;\n\n  /* ========= Icons (Interactive) ========= */\n  --interactive-icon-primary-default: #0d0e12 !important;\n  --interactive-icon-primary-hover: #0d0e12 !important;\n  --interactive-icon-primary-press: #0d0e12 !important;\n  --interactive-icon-primary-selected: #0d0e12 !important;\n  --interactive-icon-primary-inactive: #0d0e12 !important;\n\n  --interactive-icon-secondary-default: #f0ebe5 !important;\n  --interactive-icon-secondary-hover: #f6f1eb !important;\n  --interactive-icon-secondary-press: #ebe5df !important;\n  --interactive-icon-secondary-selected: #f0ebe5 !important;\n  --interactive-icon-secondary-inactive: #f0ebe5 !important;\n\n  --interactive-icon-tertiary-default: #b8b3aa !important;\n  --interactive-icon-tertiary-hover: #b8b3aa !important;\n  --interactive-icon-tertiary-press: #b8b3aa !important;\n  --interactive-icon-tertiary-selected: #b8b3aa !important;\n  --interactive-icon-tertiary-inactive: #b8b3aa !important;\n\n  --interactive-icon-accent-default: #cdb195 !important;\n  --interactive-icon-accent-hover: #cdb195 !important;\n  --interactive-icon-accent-press: #cdb195 !important;\n  --interactive-icon-accent-selected: #cdb195 !important;\n  --interactive-icon-accent-inactive: #cdb195 !important;\n\n  --interactive-icon-danger-primary-default: #f0ebe5 !important;\n  --interactive-icon-danger-primary-hover: #f0ebe5 !important;\n  --interactive-icon-danger-primary-press: #f0ebe5 !important;\n  --interactive-icon-danger-primary-inactive: #f0ebe5 !important;\n\n  --interactive-icon-danger-secondary-default: #aa7a6a !important;\n  --interactive-icon-danger-secondary-hover: #b98878 !important;\n  --interactive-icon-danger-secondary-press: #91685b !important;\n  --interactive-icon-danger-secondary-inactive: #aa7a6a !important;\n\n  /* ========= Utility ========= */\n  --utility-scrollbar: rgba(205, 177, 149, 0.35) !important;\n}\n\n#radix-_R_eilaoosk9l35_ > div.min-w-0 > div.flex.min-w-0.grow.items-center.gap-2\\.5 > div {\n  opacity: 0;\n}",
+        "domains": [
+          "chatgpt.com"
+        ]
+      }
+    ],
+    "updateDate": 1765664635953,
+    "_id": "83b5b083-5595-4862-b94e-37994d306d70",
+    "_rev": 1765664635953
+  },
+  {
+    "enabled": true,
+    "installDate": 1765663321729,
+    "name": "claude-tsukimi-dark",
+    "sections": [
+      {
+        "code": "/* Tsukimi Theme for Claude.ai - Stylus Override */\n\n[data-theme=claude][data-mode=dark] {\n  /* ========= Accent Brand (Warm Beige) ========= */\n  --accent-brand: 27 24.5% 68.8% !important;\n  --accent-main-000: 27 24.5% 68.8% !important;\n  --accent-main-100: 27 24.5% 68.8% !important;\n  --accent-main-200: 27 31.3% 75.5% !important;\n  --accent-main-900: 27 8.7% 27.5% !important;\n\n  /* ========= Accent Pro (Muted Purple) ========= */\n  --accent-pro-000: 300 21.2% 77.1% !important;\n  --accent-pro-100: 300 21.2% 66.3% !important;\n  --accent-pro-200: 300 16.9% 53.5% !important;\n  --accent-pro-900: 300 12.3% 21.4% !important;\n\n  /* ========= Accent Secondary (Muted Blue) ========= */\n  --accent-secondary-000: 210 29.4% 73.5% !important;\n  --accent-secondary-100: 210 29.4% 62.9% !important;\n  --accent-secondary-200: 210 29.4% 62.9% !important;\n  --accent-secondary-900: 210 23.5% 25.1% !important;\n\n  /* ========= Backgrounds ========= */\n  --bg-000: 240 7.3% 9.4% !important;\n  --bg-100: 240 8.7% 7.8% !important;\n  --bg-200: 240 10% 6.3% !important;\n  --bg-300: 240 13.3% 5.1% !important;\n  --bg-400: 0 0% 0% !important;\n  --bg-500: 0 0% 0% !important;\n\n  /* ========= Borders (Muted Slate) ========= */\n  --border-100: 228 16.2% 19.8% !important;\n  --border-200: 228 16.2% 19.8% !important;\n  --border-300: 228 16.2% 19.8% !important;\n  --border-400: 228 16.2% 19.8% !important;\n\n  /* ========= Danger/Error (Muted Terracotta) ========= */\n  --danger-000: 12 35.6% 74.5% !important;\n  --danger-100: 12 30.5% 58.4% !important;\n  --danger-200: 12 30.5% 58.4% !important;\n  --danger-900: 12 20.5% 31.2% !important;\n\n  /* ========= On Color (Text on Colored Backgrounds) ========= */\n  --oncolor-100: 240 7.3% 9.4% !important;\n  --oncolor-200: 48 33.3% 97.1% !important;\n  --oncolor-300: 48 33.3% 97.1% !important;\n\n  /* ========= Pictogram (UI Icons/Decorations) ========= */\n  --pictogram-100: 228 8.3% 14.7% !important;\n  --pictogram-200: 228 8.3% 14.7% !important;\n  --pictogram-300: 240 7.3% 9.4% !important;\n  --pictogram-400: 240 8.7% 7.8% !important;\n\n  /* ========= Success (Muted Green) ========= */\n  --success-000: 120 26.3% 69% !important;\n  --success-100: 120 31.9% 55.9% !important;\n  --success-200: 120 31.9% 55.9% !important;\n  --success-900: 120 38.5% 22.4% !important;\n\n  /* ========= Text Colors ========= */\n  --text-000: 48 33.3% 97.1% !important;\n  --text-100: 48 25% 92.4% !important;\n  --text-200: 48 11.1% 77.1% !important;\n  --text-300: 48 8.5% 70.6% !important;\n  --text-400: 48 6% 63.9% !important;\n  --text-500: 48 4.8% 59.2% !important;\n\n  /* ========= Warning (Warm Amber) ========= */\n  --warning-000: 27 43.2% 71.6% !important;\n  --warning-100: 27 43.2% 71.6% !important;\n  --warning-200: 27 36.4% 60.8% !important;\n  --warning-900: 27 27.3% 24.3% !important;\n}",
+        "domains": [
+          "claude.ai"
+        ]
+      }
+    ],
+    "updateDate": 1765664627412,
+    "_id": "ecd246f4-658d-4922-994f-04cfe0ae9383",
+    "_rev": 1765664627412,
+    "id": 3
+  },
+  {
+    "enabled": true,
+    "installDate": 1765664365250,
+    "name": "github-tsukimi-dark",
+    "sections": [
+      {
+        "code": "/* Tsukimi Dark Theme for GitHub - Stylus Override */\n\n[data-color-mode=\"dark\"][data-dark-theme=\"dark_high_contrast\"],\n[data-color-mode=\"dark\"][data-dark-theme=\"dark_high_contrast\"] ::backdrop,\n[data-color-mode=\"auto\"][data-light-theme=\"dark_high_contrast\"],\n[data-color-mode=\"auto\"][data-light-theme=\"dark_high_contrast\"] ::backdrop {\n  /* ========= Accent Colors (Warm Beige) ========= */\n  --fgColor-accent: #cdb195 !important;\n  --fgColor-link: #cdb195 !important;\n  --bgColor-accent-emphasis: #252A36 !important;\n  --bgColor-accent-muted: rgba(205, 177, 149, 0.1) !important;\n  --borderColor-accent-emphasis: #cdb195 !important;\n  --borderColor-accent-muted: rgba(205, 177, 149, 0.5) !important;\n\n  /* ========= Backgrounds ========= */\n  --bgColor-default: #0d0e12 !important;\n  --bgColor-muted: #161a22 !important;\n  --bgColor-inset: #0d0e12 !important;\n  --bgColor-emphasis: #252A36 !important;\n  --bgColor-neutral-emphasis: #252A36 !important;\n  --bgColor-neutral-muted: #161a22 !important;\n  --bgColor-black: #0d0e12 !important;\n  --bgColor-white: #f0ebe5 !important;\n  --bgColor-inverse: #f0ebe5 !important;\n  --bgColor-transparent: #00000000 !important;\n  --bgColor-disabled: #252A36 !important;\n  \n  /* ========= Elevated Surfaces ========= */\n  --bg-000: #161a22 !important;\n  --bg-100: #0d0e12 !important;\n  --bg-200: #0a0b0f !important;\n  --bg-300: #06070a !important;\n  --bg-400: #000000 !important;\n  --bg-500: #000000 !important;\n\n  /* ========= Borders ========= */\n  --borderColor-default: rgba(37, 42, 54, 0.85) !important;\n  --borderColor-muted: rgba(37, 42, 54, 0.45) !important;\n  --borderColor-emphasis: rgba(205, 177, 149, 0.45) !important;\n  --borderColor-translucent: rgba(205, 177, 149, 0.3) !important;\n  --borderColor-transparent: #00000000 !important;\n  --borderColor-disabled: rgba(37, 42, 54, 0.25) !important;\n\n  /* ========= Text Colors ========= */\n  --fgColor-default: #f0ebe5 !important;\n  --fgColor-muted: #b8b3aa !important;\n  --fgColor-disabled: #6a6f7a !important;\n  --fgColor-onEmphasis: #0d0e12 !important;\n  --fgColor-onInverse: #0d0e12 !important;\n  --fgColor-white: #f0ebe5 !important;\n  --fgColor-black: #0d0e12 !important;\n  --text-000: #f0ebe5 !important;\n  --text-100: #f0ebe5 !important;\n  --text-200: #e3ded8 !important;\n  --text-300: #d6d1cb !important;\n  --text-400: #b8b3aa !important;\n  --text-500: #b8b3aa !important;\n\n  /* ========= Success (Muted Green) ========= */\n  --fgColor-success: #aac098 !important;\n  --bgColor-success-emphasis: #2a3d26 !important;\n  --bgColor-success-muted: rgba(170, 192, 152, 0.15) !important;\n  --borderColor-success-emphasis: #aac098 !important;\n  --borderColor-success-muted: rgba(170, 192, 152, 0.3) !important;\n\n  /* ========= Danger/Error (Muted Terracotta) ========= */\n  --fgColor-danger: #aa7a6a !important;\n  --bgColor-danger-emphasis: #3d2622 !important;\n  --bgColor-danger-muted: rgba(170, 122, 106, 0.15) !important;\n  --borderColor-danger-emphasis: #aa7a6a !important;\n  --borderColor-danger-muted: rgba(170, 122, 106, 0.3) !important;\n\n  /* ========= Attention/Warning (Warm Amber) ========= */\n  --fgColor-attention: #cdb195 !important;\n  --bgColor-attention-emphasis: #3d3226 !important;\n  --bgColor-attention-muted: rgba(205, 177, 149, 0.15) !important;\n  --borderColor-attention-emphasis: #cdb195 !important;\n  --borderColor-attention-muted: rgba(205, 177, 149, 0.3) !important;\n\n  /* ========= Done/Upsell (Muted Purple) ========= */\n  --fgColor-done: #ba9aaa !important;\n  --fgColor-upsell: #ba9aaa !important;\n  --bgColor-done-emphasis: #372a3d !important;\n  --bgColor-done-muted: rgba(186, 154, 170, 0.15) !important;\n  --bgColor-upsell-emphasis: #372a3d !important;\n  --bgColor-upsell-muted: rgba(186, 154, 170, 0.15) !important;\n  --borderColor-done-emphasis: #ba9aaa !important;\n  --borderColor-done-muted: rgba(186, 154, 170, 0.3) !important;\n\n  /* ========= Sponsors (Muted Pink) ========= */\n  --fgColor-sponsors: #d4a5ba !important;\n  --bgColor-sponsors-emphasis: #3d2a34 !important;\n  --bgColor-sponsors-muted: rgba(212, 165, 186, 0.15) !important;\n  --borderColor-sponsors-emphasis: #d4a5ba !important;\n  --borderColor-sponsors-muted: rgba(212, 165, 186, 0.3) !important;\n\n  /* ========= Interactive - Primary (Accent) ========= */\n  --button-primary-bgColor-rest: #cdb195 !important;\n  --button-primary-bgColor-hover: #d9c3ab !important;\n  --button-primary-bgColor-active: #c1a98f !important;\n  --button-primary-bgColor-disabled: rgba(205, 177, 149, 0.3) !important;\n  --button-primary-fgColor-rest: #0d0e12 !important;\n  --button-primary-iconColor-rest: #0d0e12 !important;\n  --button-primary-fgColor-disabled: rgba(13, 14, 18, 0.4) !important;\n  --button-primary-borderColor-rest: #cdb195 !important;\n  --button-primary-borderColor-hover: #d9c3ab !important;\n  --button-primary-borderColor-active: #c1a98f !important;\n  --button-primary-borderColor-disabled: rgba(205, 177, 149, 0.3) !important;\n\n  /* ========= Interactive - Secondary ========= */\n  --button-default-bgColor-rest: #252A36 !important;\n  --button-default-bgColor-hover: #2f3546 !important;\n  --button-default-bgColor-active: #1e2330 !important;\n  --button-default-bgColor-disabled: rgba(37, 42, 54, 0.3) !important;\n  --button-default-fgColor-rest: #f0ebe5 !important;\n  --button-default-borderColor-rest: rgba(37, 42, 54, 0.85) !important;\n  --button-default-borderColor-hover: rgba(205, 177, 149, 0.45) !important;\n  --button-default-borderColor-active: rgba(205, 177, 149, 0.65) !important;\n  --button-default-borderColor-disabled: rgba(37, 42, 54, 0.25) !important;\n\n  /* ========= Interactive - Danger ========= */\n  --button-danger-bgColor-rest: #252A36 !important;\n  --button-danger-bgColor-hover: #3d2622 !important;\n  --button-danger-bgColor-active: #33211d !important;\n  --button-danger-fgColor-rest: #aa7a6a !important;\n  --button-danger-fgColor-hover: #f0ebe5 !important;\n  --button-danger-fgColor-active: #f0ebe5 !important;\n  --button-danger-borderColor-hover: #aa7a6a !important;\n  --button-danger-borderColor-active: #aa7a6a !important;\n\n  /* ========= Controls ========= */\n  --control-bgColor-rest: #252A36 !important;\n  --control-bgColor-hover: #2f3546 !important;\n  --control-bgColor-active: #1e2330 !important;\n  --control-bgColor-disabled: rgba(37, 42, 54, 0.3) !important;\n  --control-fgColor-rest: #f0ebe5 !important;\n  --control-fgColor-disabled: #6a6f7a !important;\n  --control-borderColor-rest: rgba(37, 42, 54, 0.85) !important;\n  --control-borderColor-emphasis: rgba(205, 177, 149, 0.45) !important;\n  --control-borderColor-disabled: rgba(37, 42, 54, 0.25) !important;\n  \n  --control-checked-bgColor-rest: #cdb195 !important;\n  --control-checked-bgColor-hover: #d9c3ab !important;\n  --control-checked-bgColor-active: #c1a98f !important;\n  --control-checked-fgColor-rest: #0d0e12 !important;\n  --control-checked-borderColor-rest: #cdb195 !important;\n  --control-checked-borderColor-hover: #d9c3ab !important;\n\n  /* ========= Focus States ========= */\n  --focus-outlineColor: #cdb195 !important;\n  --focus-outline: 2px solid #cdb195 !important;\n  --interactive-border-focus: #cdb195 !important;\n\n  /* ========= Code Syntax ========= */\n  --codeMirror-bgColor: #0d0e12 !important;\n  --codeMirror-fgColor: #f0ebe5 !important;\n  --codeMirror-syntax-fgColor-comment: #6a6f7a !important;\n  --codeMirror-syntax-fgColor-constant: #8a9fba !important;\n  --codeMirror-syntax-fgColor-entity: #ba9aaa !important;\n  --codeMirror-syntax-fgColor-keyword: #aa7a6a !important;\n  --codeMirror-syntax-fgColor-storage: #aa7a6a !important;\n  --codeMirror-syntax-fgColor-string: #aac098 !important;\n  --codeMirror-syntax-fgColor-support: #8a9fba !important;\n  --codeMirror-syntax-fgColor-variable: #e5d5b8 !important;\n\n  /* ========= Prettylights Syntax ========= */\n  --color-prettylights-syntax-comment: #6a6f7a !important;\n  --color-prettylights-syntax-constant: #8a9fba !important;\n  --color-prettylights-syntax-entity: #ba9aaa !important;\n  --color-prettylights-syntax-keyword: #aa7a6a !important;\n  --color-prettylights-syntax-string: #aac098 !important;\n  --color-prettylights-syntax-variable: #e5d5b8 !important;\n  --color-prettylights-syntax-markup-heading: #cdb195 !important;\n  --color-prettylights-syntax-markup-bold: #f0ebe5 !important;\n  --color-prettylights-syntax-markup-italic: #f0ebe5 !important;\n\n  /* ========= ANSI Colors ========= */\n  --color-ansi-black: #0d0e12 !important;\n  --color-ansi-black-bright: #252A36 !important;\n  --color-ansi-red: #aa7a6a !important;\n  --color-ansi-red-bright: #b98878 !important;\n  --color-ansi-green: #aac098 !important;\n  --color-ansi-green-bright: #bcd5a8 !important;\n  --color-ansi-yellow: #cdb195 !important;\n  --color-ansi-yellow-bright: #e5d5b8 !important;\n  --color-ansi-blue: #8a9fba !important;\n  --color-ansi-blue-bright: #a4b5cc !important;\n  --color-ansi-magenta: #ba9aaa !important;\n  --color-ansi-magenta-bright: #d0aebe !important;\n  --color-ansi-cyan: #9aafca !important;\n  --color-ansi-cyan-bright: #b4c5dc !important;\n  --color-ansi-white: #f0ebe5 !important;\n  --color-ansi-white-bright: #faf8f5 !important;\n\n  /* ========= Scrollbar ========= */\n  --utility-scrollbar: rgba(205, 177, 149, 0.35) !important;\n\n  /* ========= Header ========= */\n  --header-bgColor: rgba(13, 14, 18, 0.95) !important;\n  --header-fgColor-default: rgba(240, 235, 229, 0.7) !important;\n  --header-fgColor-logo: #f0ebe5 !important;\n  --header-borderColor-divider: rgba(37, 42, 54, 0.85) !important;\n\n  /* ========= Shadows ========= */\n  --shadow-resting-xsmall: 0px 1px 1px 0px rgba(13, 14, 18, 0.8) !important;\n  --shadow-resting-small: 0px 1px 1px 0px rgba(13, 14, 18, 0.6), 0px 1px 3px 0px rgba(13, 14, 18, 0.6) !important;\n  --shadow-resting-medium: 0px 1px 1px 0px rgba(13, 14, 18, 0.4), 0px 3px 6px 0px rgba(13, 14, 18, 0.8) !important;\n\n  /* ========= Selection ========= */\n  --selection-bgColor: rgba(205, 177, 149, 0.3) !important;\n\n  /* ========= Avatar & Cards ========= */\n  --avatar-bgColor: rgba(37, 42, 54, 0.5) !important;\n  --avatar-borderColor: rgba(205, 177, 149, 0.45) !important;\n  --card-bgColor: #161a22 !important;\n\n  /* ========= Overlay & Tooltips ========= */\n  --overlay-bgColor: #0d0e12 !important;\n  --overlay-borderColor: rgba(37, 42, 54, 0.85) !important;\n  --tooltip-bgColor: #252A36 !important;\n  --tooltip-fgColor: #f0ebe5 !important;\n\n  /* ========= Contributions Graph ========= */\n  --contribution-default-bgColor-0: #0d0e12 !important;\n  --contribution-default-borderColor-0: rgba(37, 42, 54, 0.85) !important;\n}",
+        "urlPrefixes": [
+          "https://github.com/"
+        ]
+      }
+    ],
+    "updateDate": 1765664611692,
+    "_id": "8cb703d0-1335-487a-8276-8fc71f217581",
+    "_rev": 1765664611692,
+    "id": 4,
+    "preferScheme": "dark"
+  }
+]

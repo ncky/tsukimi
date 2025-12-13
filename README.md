@@ -17,4 +17,4 @@ Light + dark “tsukimi” themes for various applications.
 - `chrome` (Google Chrome)
 - `gtk3.0` (GTK 3)
 - `opencode`
-
+- `stylus` (browser extension)
