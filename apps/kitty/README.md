@@ -8,8 +8,3 @@ This folder contains the Tsukimi kitty theme files.
 2. In `kitty.conf`, include one of them:
    - `include themes/tsukimi-dark.conf`
    - `include themes/tsukimi-light.conf`
-
-## Notes
-
-The `.conf` files are a starting template; fill in the palette you want.
-
