@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740">
+  <defs>
+    <style>
+      .title { font: 700 32px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; fill: #111827; }
+      .subtitle { font: 600 20px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; fill: #111827; }
+      .label { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .hint { font: 500 13px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; fill: #374151; }
+      .swatch { rx: 12; ry: 12; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="740" fill="#ffffff" />
+
+  <!-- Header -->
+  <text x="48" y="60" class="title">Tsukimi palette</text>
+  <text x="48" y="92" class="hint">Dark + light reference swatches (hex)</text>
+
+  <!-- Layout constants -->
+  <!-- Swatch size: 176 x 88, gap: 16 -->
+
+  <!-- DARK -->
+  <text x="48" y="150" class="subtitle">Dark</text>
+
+  <!-- Row 1 -->
+  <rect class="swatch" x="48"  y="170" width="176" height="88" fill="#0d0e12"/>
+  <text x="64" y="214" class="label" fill="#f0ebe5">#0d0e12</text>
+  <text x="64" y="238" class="label" fill="#b8b3aa">background</text>
+
+  <rect class="swatch" x="240" y="170" width="176" height="88" fill="#0a0b0f"/>
+  <text x="256" y="214" class="label" fill="#f0ebe5">#0a0b0f</text>
+  <text x="256" y="238" class="label" fill="#b8b3aa">backgroundAlt</text>
+
+  <rect class="swatch" x="432" y="170" width="176" height="88" fill="#161a22"/>
+  <text x="448" y="214" class="label" fill="#f0ebe5">#161a22</text>
+  <text x="448" y="238" class="label" fill="#b8b3aa">surface</text>
+
+  <rect class="swatch" x="624" y="170" width="176" height="88" fill="#252A36"/>
+  <text x="640" y="214" class="label" fill="#f0ebe5">#252A36</text>
+  <text x="640" y="238" class="label" fill="#b8b3aa">button</text>
+
+  <rect class="swatch" x="816" y="170" width="176" height="88" fill="#3a3f4a"/>
+  <text x="832" y="214" class="label" fill="#f0ebe5">#3a3f4a</text>
+  <text x="832" y="238" class="label" fill="#b8b3aa">hover</text>
+
+  <rect class="swatch" x="1008" y="170" width="176" height="88" fill="#f0ebe5"/>
+  <text x="1024" y="214" class="label" fill="#0d0e12">#f0ebe5</text>
+  <text x="1024" y="238" class="label" fill="#252A36">text</text>
+
+  <!-- Row 2 -->
+  <rect class="swatch" x="48"  y="274" width="176" height="88" fill="#b8b3aa"/>
+  <text x="64" y="318" class="label" fill="#0d0e12">#b8b3aa</text>
+  <text x="64" y="342" class="label" fill="#252A36">muted</text>
+
+  <rect class="swatch" x="240" y="274" width="176" height="88" fill="#8a8a90"/>
+  <text x="256" y="318" class="label" fill="#0d0e12">#8a8a90</text>
+  <text x="256" y="342" class="label" fill="#252A36">dim</text>
+
+  <rect class="swatch" x="432" y="274" width="176" height="88" fill="#6a6f7a"/>
+  <text x="448" y="318" class="label" fill="#0d0e12">#6a6f7a</text>
+  <text x="448" y="342" class="label" fill="#252A36">veryDim</text>
+
+  <rect class="swatch" x="624" y="274" width="176" height="88" fill="#cdb195"/>
+  <text x="640" y="318" class="label" fill="#0d0e12">#cdb195</text>
+  <text x="640" y="342" class="label" fill="#252A36">accent</text>
+
+  <rect class="swatch" x="816" y="274" width="176" height="88" fill="#6a7a9a"/>
+  <text x="832" y="318" class="label" fill="#0d0e12">#6a7a9a</text>
+  <text x="832" y="342" class="label" fill="#252A36">blue</text>
+
+  <rect class="swatch" x="1008" y="274" width="176" height="88" fill="#8a9a80"/>
+  <text x="1024" y="318" class="label" fill="#0d0e12">#8a9a80</text>
+  <text x="1024" y="342" class="label" fill="#252A36">green</text>
+
+  <!-- Row 3 -->
+  <rect class="swatch" x="48"  y="378" width="176" height="88" fill="#aa7a6a"/>
+  <text x="64" y="422" class="label" fill="#0d0e12">#aa7a6a</text>
+  <text x="64" y="446" class="label" fill="#252A36">red</text>
+
+  <rect class="swatch" x="240" y="378" width="176" height="88" fill="#9a7a8a"/>
+  <text x="256" y="422" class="label" fill="#0d0e12">#9a7a8a</text>
+  <text x="256" y="446" class="label" fill="#252A36">magenta</text>
+
+  <rect class="swatch" x="432" y="378" width="176" height="88" fill="#7a8a9a"/>
+  <text x="448" y="422" class="label" fill="#0d0e12">#7a8a9a</text>
+  <text x="448" y="446" class="label" fill="#252A36">cyan</text>
+
+  <rect class="swatch" x="624" y="378" width="176" height="88" fill="#e5d5b8"/>
+  <text x="640" y="422" class="label" fill="#0d0e12">#e5d5b8</text>
+  <text x="640" y="446" class="label" fill="#252A36">accentBright</text>
+
+  <rect class="swatch" x="816" y="378" width="176" height="88" fill="#aac098"/>
+  <text x="832" y="422" class="label" fill="#0d0e12">#aac098</text>
+  <text x="832" y="446" class="label" fill="#252A36">greenBright</text>
+
+  <rect class="swatch" x="1008" y="378" width="176" height="88" fill="#8a9fba"/>
+  <text x="1024" y="422" class="label" fill="#0d0e12">#8a9fba</text>
+  <text x="1024" y="446" class="label" fill="#252A36">blueBright</text>
+
+  <!-- LIGHT -->
+  <text x="48" y="540" class="subtitle">Light</text>
+
+  <!-- Row 1 -->
+  <rect class="swatch" x="48"  y="560" width="176" height="88" fill="#f5f0e8"/>
+  <text x="64" y="604" class="label" fill="#4a3f35">#f5f0e8</text>
+  <text x="64" y="628" class="label" fill="#6b5d4f">background</text>
+
+  <rect class="swatch" x="240" y="560" width="176" height="88" fill="#faf7f2"/>
+  <text x="256" y="604" class="label" fill="#4a3f35">#faf7f2</text>
+  <text x="256" y="628" class="label" fill="#6b5d4f">surface</text>
+
+  <rect class="swatch" x="432" y="560" width="176" height="88" fill="#e8dfd0"/>
+  <text x="448" y="604" class="label" fill="#4a3f35">#e8dfd0</text>
+  <text x="448" y="628" class="label" fill="#6b5d4f">border</text>
+
+  <rect class="swatch" x="624" y="560" width="176" height="88" fill="#4a3f35"/>
+  <text x="640" y="604" class="label" fill="#f5f0e8">#4a3f35</text>
+  <text x="640" y="628" class="label" fill="#e8dfd0">text</text>
+
+  <rect class="swatch" x="816" y="560" width="176" height="88" fill="#6b5d4f"/>
+  <text x="832" y="604" class="label" fill="#f5f0e8">#6b5d4f</text>
+  <text x="832" y="628" class="label" fill="#e8dfd0">muted</text>
+
+  <rect class="swatch" x="1008" y="560" width="176" height="88" fill="#d4a574"/>
+  <text x="1024" y="604" class="label" fill="#4a3f35">#d4a574</text>
+  <text x="1024" y="628" class="label" fill="#6b5d4f">accent</text>
+</svg>

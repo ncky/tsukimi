@@ -2,6 +2,8 @@
 
 Light + dark “tsukimi” themes for various applications.
 
+![Tsukimi palette](assets/tsukimi-palette.svg)
+
 ## Layout
 
 - `apps/<app>/tsukimi-dark.*` / `apps/<app>/tsukimi-light.*` (when the app supports separate variants)
