@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Tsukimi Light",
+  "description": "A warm, paper-like light theme with golden accents",
+  "theme": {
+    "colors": {
+      "frame": [245, 240, 232],
+      "frame_inactive": [250, 247, 242],
+      "frame_incognito": [245, 240, 232],
+      "frame_incognito_inactive": [250, 247, 242],
+      "toolbar": [250, 247, 242],
+      "tab_text": [107, 93, 79],
+      "tab_background_text": [74, 63, 53],
+      "tab_background_text_inactive": [107, 93, 79],
+      "tab_background_text_incognito": [74, 63, 53],
+      "tab_background_text_incognito_inactive": [107, 93, 79],
+      "bookmark_text": [74, 63, 53],
+      "ntp_background": [245, 240, 232],
+      "ntp_text": [74, 63, 53],
+      "ntp_link": [139, 115, 85],
+      "ntp_header": [250, 247, 242],
+      "button_background": [232, 223, 208],
+      "omnibox_background": [232, 223, 208],
+      "omnibox_text": [74, 63, 53]
+    },
+    "tints": {
+      "buttons": [0.08, 0.15, 0.92],
+      "frame": [0.08, 0.15, 0.96],
+      "frame_inactive": [0.08, 0.1, 0.98],
+      "frame_incognito": [0.08, 0.15, 0.96],
+      "frame_incognito_inactive": [0.08, 0.1, 0.98],
+      "background_tab": [0.08, 0.1, 0.94]
+    },
+    "properties": {
+      "ntp_background_alignment": "center",
+      "ntp_background_repeat": "no-repeat",
+      "ntp_logo_alternate": 1
+    }
+  }
+}

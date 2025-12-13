@@ -14,4 +14,5 @@ Light + dark “tsukimi” themes for various applications.
 - `vicinae`
 - `dms` (DankMaterialShell)
 - `kvantum` (Qt)
+- `chrome` (Google Chrome)
 
