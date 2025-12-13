@@ -16,4 +16,5 @@ Light + dark “tsukimi” themes for various applications.
 - `kvantum` (Qt)
 - `chrome` (Google Chrome)
 - `gtk3.0` (GTK 3)
+- `opencode`
 
