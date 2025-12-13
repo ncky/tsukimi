@@ -1,0 +1,118 @@
+# Tsukimi Light Theme for Vicinae
+# A warm, paper-like light theme with golden accents
+# Based on: moonlit gold #d4a574, midnight blue #252A36, paper gray #e3dfd9, umber brown #6E4F47
+
+[meta]
+name = "Tsukimi Light"
+description = "A warm, paper-like light theme with golden accents"
+variant = "light"
+inherits = "vicinae-light"
+
+# ============================================================================
+# Core Colors
+# ============================================================================
+
+[colors.core]
+accent = "#d4a574"              # Lighter moonlit gold
+accent_foreground = "#4a3f35"   # Deep umber on gold
+background = "#f5f0e8"          # Warm paper background
+foreground = "#4a3f35"          # Deep umber foreground
+secondary_background = "#faf7f2" # Elevated surfaces
+border = "#e8dfd0"              # Paper gray borders
+
+# ============================================================================
+# Window-Specific Colors
+# ============================================================================
+
+[colors.main_window]
+border = "#e8dfd0"
+
+[colors.settings_window]
+border = "#e8dfd0"
+
+# ============================================================================
+# Accent Colors
+# ============================================================================
+
+[colors.accents]
+blue = "#7a8ca3"
+green = "#8b7355"
+magenta = "#a67f69"
+orange = "#d89778"
+red = "#c17a5c"
+yellow = "#d4a574"
+cyan = "#9b8a73"
+purple = "#a67f69"
+
+# ============================================================================
+# Text Colors
+# ============================================================================
+
+[colors.text]
+default = "#4a3f35"
+muted = "#6b5d4f"
+danger = "#c17a5c"
+success = "#8b7355"
+placeholder = "#8b7d6f"
+selection = { background = "#d4a574", foreground = "#4a3f35" }
+
+[colors.text.links]
+default = "#8b7355"
+visited = "#a67f69"
+
+# ============================================================================
+# Input Fields
+# ============================================================================
+
+[colors.input]
+border = "#e8dfd0"
+border_focus = "#d4a574"
+border_error = "#c17a5c"
+
+# ============================================================================
+# Buttons
+# ============================================================================
+
+[colors.button.primary]
+background = "#e8dfd0"
+foreground = "#4a3f35"
+hover = { background = "#d4a574" }
+focus = { outline = "#d4a574" }
+
+# ============================================================================
+# Lists
+# ============================================================================
+
+[colors.list.item.hover]
+background = "#e8dfd0"
+foreground = "#4a3f35"
+
+[colors.list.item.selection]
+background = "#e8dfd0"
+foreground = "#4a3f35"
+secondary_background = "#d4a574"
+secondary_foreground = "#4a3f35"
+
+# ============================================================================
+# Grid Items
+# ============================================================================
+
+[colors.grid.item]
+background = "#faf7f2"
+hover = { outline = "#d4a574" }
+selection = { outline = "#d4a574" }
+
+# ============================================================================
+# Scrollbars
+# ============================================================================
+
+[colors.scrollbars]
+background = "#e8dfd0"
+
+# ============================================================================
+# Loading Indicators
+# ============================================================================
+
+[colors.loading]
+bar = "#d4a574"
+spinner = "#d4a574"

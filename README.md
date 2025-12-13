@@ -11,4 +11,5 @@ Light + dark “tsukimi” themes for various applications.
 
 - `kitty` (terminal)
 - `zed` (editor)
+- `vicinae`
 
