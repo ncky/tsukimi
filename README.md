@@ -15,4 +15,5 @@ Light + dark “tsukimi” themes for various applications.
 - `dms` (DankMaterialShell)
 - `kvantum` (Qt)
 - `chrome` (Google Chrome)
+- `gtk3.0` (GTK 3)
 
