@@ -13,4 +13,5 @@ Light + dark “tsukimi” themes for various applications.
 - `zed` (editor)
 - `vicinae`
 - `dms` (DankMaterialShell)
+- `kvantum` (Qt)
 
