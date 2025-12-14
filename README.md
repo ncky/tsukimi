@@ -1,7 +1,3 @@
-# tsukimi
-
-Light + dark “tsukimi” themes for various applications.
-
 ![Tsukimi palette](assets/tsukimi-palette.svg)
 
 ## Layout
