@@ -1,187 +1,277 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
   <defs>
     <style>
-      .title { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-weight: 750; font-size: 34px; fill: #f0ebe5; letter-spacing: -0.02em; }
-      .hint { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-weight: 500; font-size: 14px; fill: rgba(240, 235, 229, 0.70); }
-      .section { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-weight: 650; font-size: 18px; fill: rgba(240, 235, 229, 0.88); }
-      .swatch { rx: 14; ry: 14; }
-      .swatch-dark { stroke: rgba(240, 235, 229, 0.08); stroke-width: 1; }
-      .swatch-light { stroke: rgba(74, 63, 53, 0.12); stroke-width: 1; }
-      .pill-dark { fill: rgba(13, 14, 18, 0.66); }
-      .pill-light { fill: rgba(74, 63, 53, 0.10); }
-      .pill-name-dark { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-weight: 600; font-size: 13px; fill: rgba(240, 235, 229, 0.92); }
-      .pill-hex-dark { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-weight: 650; font-size: 12px; fill: rgba(240, 235, 229, 0.72); }
-      .pill-name-light { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-weight: 600; font-size: 13px; fill: rgba(74, 63, 53, 0.92); }
-      .pill-hex-light { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-weight: 650; font-size: 12px; fill: rgba(74, 63, 53, 0.70); }
+      .title {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        fill: #f0ebe5;
+        letter-spacing: -0.03em;
+      }
+      .subtitle {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        fill: #b8b3aa;
+        letter-spacing: -0.01em;
+      }
+      .section-title {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 650;
+        font-size: 16px;
+        fill: #f0ebe5;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        opacity: 0.6;
+      }
+
+      .swatch-stroke {
+        stroke: rgba(255, 255, 255, 0.06);
+        stroke-width: 1;
+      }
+
+      .label-bg {
+        fill: rgba(13, 14, 18, 0.7);
+      }
+      .label-name {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 600;
+        font-size: 12.5px;
+        fill: rgba(240, 235, 229, 0.95);
+      }
+      .label-hex {
+        font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+        font-weight: 600;
+        font-size: 11.5px;
+        fill: rgba(240, 235, 229, 0.65);
+        letter-spacing: 0.02em;
+      }
+
+      .light-section-title {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 650;
+        font-size: 16px;
+        fill: #4a3f35;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        opacity: 0.6;
+      }
+
+      .light-label-bg {
+        fill: rgba(74, 63, 53, 0.08);
+      }
+      .light-label-name {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 600;
+        font-size: 12.5px;
+        fill: rgba(74, 63, 53, 0.95);
+      }
+      .light-label-hex {
+        font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+        font-weight: 600;
+        font-size: 11.5px;
+        fill: rgba(74, 63, 53, 0.65);
+        letter-spacing: 0.02em;
+      }
+      .light-swatch-stroke {
+        stroke: rgba(74, 63, 53, 0.12);
+        stroke-width: 1;
+      }
     </style>
   </defs>
 
-  <!-- Canvas background (Tsukimi dark) -->
-  <rect x="0" y="0" width="1200" height="760" fill="#0d0e12" />
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#0d0e12"/>
 
   <!-- Header -->
-  <circle cx="60" cy="58" r="10" fill="#cdb195" opacity="0.95" />
-  <text x="84" y="66" class="title">Tsukimi palette</text>
-  <text x="84" y="92" class="hint">Reference swatches used across themes (hex)</text>
+  <circle cx="48" cy="52" r="8" fill="#cdb195" opacity="0.9"/>
+  <text x="68" y="60" class="title">tsukimi</text>
 
-  <!-- Dark section label -->
-  <text x="48" y="140" class="section">Dark</text>
+  <!-- Layout constants (manual):
+       swatch w=176 h=84
+       gap x=12 (step=188), gap y=12 (step=96)
+       swatch radius = 14
+       label pill: x=10, y=56, w=156, h=22, r=11
+       label text y centered at 67 with dominant-baseline="middle"
+  -->
 
-  <!-- Dark swatches: 176x88, gap 16 -->
-  <!-- Row 1 y=160 -->
-  <g transform="translate(48 160)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#0d0e12"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">background</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#0d0e12</text>
-  </g>
-  <g transform="translate(240 160)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#0a0b0f"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">backgroundAlt</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#0a0b0f</text>
-  </g>
-  <g transform="translate(432 160)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#161a22"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">surface</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#161a22</text>
-  </g>
-  <g transform="translate(624 160)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#252A36"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">button</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#252A36</text>
-  </g>
-  <g transform="translate(816 160)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#3a3f4a"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">hover</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#3a3f4a</text>
-  </g>
-  <g transform="translate(1008 160)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#f0ebe5"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">text</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#f0ebe5</text>
+  <!-- Dark Palette Section -->
+  <text x="48" y="130" class="section-title">Dark Theme</text>
+
+  <!-- Row 1 (y=148) -->
+  <g transform="translate(48, 148)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#0d0e12"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">background</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#0d0e12</text>
   </g>
 
-  <!-- Row 2 y=264 -->
-  <g transform="translate(48 264)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#b8b3aa"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">muted</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#b8b3aa</text>
-  </g>
-  <g transform="translate(240 264)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#8a8a90"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">dim</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#8a8a90</text>
-  </g>
-  <g transform="translate(432 264)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#6a6f7a"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">veryDim</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#6a6f7a</text>
-  </g>
-  <g transform="translate(624 264)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#cdb195"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">accent</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#cdb195</text>
-  </g>
-  <g transform="translate(816 264)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#6a7a9a"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">blue</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#6a7a9a</text>
-  </g>
-  <g transform="translate(1008 264)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#8a9a80"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">green</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#8a9a80</text>
+  <g transform="translate(236, 148)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#0a0b0f"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">backgroundAlt</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#0a0b0f</text>
   </g>
 
-  <!-- Row 3 y=368 -->
-  <g transform="translate(48 368)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#aa7a6a"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">red</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#aa7a6a</text>
-  </g>
-  <g transform="translate(240 368)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#9a7a8a"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">magenta</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#9a7a8a</text>
-  </g>
-  <g transform="translate(432 368)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#7a8a9a"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">cyan</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#7a8a9a</text>
-  </g>
-  <g transform="translate(624 368)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#e5d5b8"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">accentBright</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#e5d5b8</text>
-  </g>
-  <g transform="translate(816 368)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#aac098"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">greenBright</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#aac098</text>
-  </g>
-  <g transform="translate(1008 368)">
-    <rect class="swatch swatch-dark" width="176" height="88" fill="#8a9fba"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-dark"/>
-    <text x="18" y="74" class="pill-name-dark">blueBright</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-dark">#8a9fba</text>
+  <g transform="translate(424, 148)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#161a22"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">surface</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#161a22</text>
   </g>
 
-  <!-- Light section: only this area uses a light surround -->
-  <rect x="32" y="490" width="1136" height="238" rx="22" fill="#f5f0e8" stroke="#e8dfd0" stroke-width="1"/>
-  <text x="56" y="528" class="section" fill="#4a3f35">Light</text>
-  <text x="56" y="550" class="hint" fill="rgba(74, 63, 53, 0.70)">Same palette, tuned for paper-like surfaces</text>
+  <g transform="translate(612, 148)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#252A36"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">button</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#252A36</text>
+  </g>
 
-  <!-- Light swatches y=580 (inside panel) -->
-  <g transform="translate(48 580)">
-    <rect class="swatch swatch-light" width="176" height="88" fill="#f5f0e8"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-light"/>
-    <text x="18" y="74" class="pill-name-light">background</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-light">#f5f0e8</text>
+  <g transform="translate(800, 148)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#3a3f4a"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">hover</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#3a3f4a</text>
   </g>
-  <g transform="translate(240 580)">
-    <rect class="swatch swatch-light" width="176" height="88" fill="#faf7f2"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-light"/>
-    <text x="18" y="74" class="pill-name-light">surface</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-light">#faf7f2</text>
+
+  <g transform="translate(988, 148)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#f0ebe5"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">text</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#f0ebe5</text>
   </g>
-  <g transform="translate(432 580)">
-    <rect class="swatch swatch-light" width="176" height="88" fill="#e8dfd0"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-light"/>
-    <text x="18" y="74" class="pill-name-light">border</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-light">#e8dfd0</text>
+
+  <!-- Row 2 (y=244) -->
+  <g transform="translate(48, 244)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#b8b3aa"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">muted</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#b8b3aa</text>
   </g>
-  <g transform="translate(624 580)">
-    <rect class="swatch swatch-light" width="176" height="88" fill="#4a3f35"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" fill="rgba(245, 240, 232, 0.60)"/>
-    <text x="18" y="74" class="pill-name-light">text</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-light">#4a3f35</text>
+
+  <g transform="translate(236, 244)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#8a8a90"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">dim</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#8a8a90</text>
   </g>
-  <g transform="translate(816 580)">
-    <rect class="swatch swatch-light" width="176" height="88" fill="#6b5d4f"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" fill="rgba(245, 240, 232, 0.58)"/>
-    <text x="18" y="74" class="pill-name-light">muted</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-light">#6b5d4f</text>
+
+  <g transform="translate(424, 244)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#6a6f7a"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">veryDim</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#6a6f7a</text>
   </g>
-  <g transform="translate(1008 580)">
-    <rect class="swatch swatch-light" width="176" height="88" fill="#d4a574"/>
-    <rect x="10" y="58" width="156" height="22" rx="11" class="pill-light"/>
-    <text x="18" y="74" class="pill-name-light">accent</text>
-    <text x="166" y="74" text-anchor="end" class="pill-hex-light">#d4a574</text>
+
+  <g transform="translate(612, 244)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#cdb195"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">accent</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#cdb195</text>
+  </g>
+
+  <g transform="translate(800, 244)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#6a7a9a"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">blue</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#6a7a9a</text>
+  </g>
+
+  <g transform="translate(988, 244)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#8a9a80"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">green</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#8a9a80</text>
+  </g>
+
+  <!-- Row 3 (y=340) -->
+  <g transform="translate(48, 340)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#aa7a6a"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">red</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#aa7a6a</text>
+  </g>
+
+  <g transform="translate(236, 340)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#9a7a8a"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">magenta</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#9a7a8a</text>
+  </g>
+
+  <g transform="translate(424, 340)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#7a8a9a"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">cyan</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#7a8a9a</text>
+  </g>
+
+  <g transform="translate(612, 340)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#e5d5b8"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">accentBright</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#e5d5b8</text>
+  </g>
+
+  <g transform="translate(800, 340)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#aac098"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">greenBright</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#aac098</text>
+  </g>
+
+  <g transform="translate(988, 340)">
+    <rect width="176" height="84" rx="14" ry="14" class="swatch-stroke" fill="#8a9fba"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">blueBright</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#8a9fba</text>
+  </g>
+
+  <!-- Light Theme Section (moved up slightly to keep spacing consistent after row gap changes) -->
+  <rect x="38" y="456" width="1136" height="180" rx="1" fill="#f5f0e8" stroke="#e8dfd0" stroke-width="1"/>
+
+  <text x="68" y="492" class="light-section-title">Light Theme</text>
+
+  <!-- Light row (6 columns) — starts at x=58 to keep 10px padding inside the container -->
+  <g transform="translate(48, 516)">
+    <rect width="176" height="84" rx="14" ry="14" class="light-swatch-stroke" fill="#f5f0e8"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="light-label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="light-label-name">background</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="light-label-hex">#f5f0e8</text>
+  </g>
+
+  <g transform="translate(236, 516)">
+    <rect width="176" height="84" rx="14" ry="14" class="light-swatch-stroke" fill="#faf7f2"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="light-label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="light-label-name">surface</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="light-label-hex">#faf7f2</text>
+  </g>
+
+  <g transform="translate(424, 516)">
+    <rect width="176" height="84" rx="14" ry="14" class="light-swatch-stroke" fill="#e8dfd0"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="light-label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="light-label-name">border</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="light-label-hex">#e8dfd0</text>
+  </g>
+
+  <g transform="translate(612, 516)">
+    <rect width="176" height="84" rx="14" ry="14" class="light-swatch-stroke" fill="#4a3f35"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">text</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#4a3f35</text>
+  </g>
+
+  <g transform="translate(800, 516)">
+    <rect width="176" height="84" rx="14" ry="14" class="light-swatch-stroke" fill="#6b5d4f"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="label-name">muted</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="label-hex">#6b5d4f</text>
+  </g>
+
+  <g transform="translate(988, 516)">
+    <rect width="176" height="84" rx="14" ry="14" class="light-swatch-stroke" fill="#d4a574"/>
+    <rect x="10" y="56" width="156" height="22" rx="11" ry="11" class="light-label-bg"/>
+    <text x="18" y="67" dominant-baseline="middle" class="light-label-name">accent</text>
+    <text x="158" y="67" dominant-baseline="middle" text-anchor="end" class="light-label-hex">#d4a574</text>
   </g>
 </svg>
