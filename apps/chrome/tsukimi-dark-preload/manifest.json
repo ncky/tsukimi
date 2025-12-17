@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Tsukimi Preload Backdrop",
+  "version": "1.0.0",
+  "description": "Reduces the white flash by setting a dark background at document_start.",
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["preload.css"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "match_origin_as_fallback": true
+    }
+  ]
+}

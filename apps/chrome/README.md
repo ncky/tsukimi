@@ -16,6 +16,10 @@ Tsukimi themes for Google Chrome (Chromium-based browsers).
 - To switch variants, remove/disable the currently loaded theme extension and load the other folder.
 - After editing `manifest.json`, click the extension reload icon (or toggle it off/on).
 
+## Optional: preload backdrop
+
+If you want to reduce the “white flash” during navigation/loading, you can also load `apps/chrome/tsukimi-dark-preload/` as a separate unpacked extension.
+
 ## Uninstall
 
 - Go back to the extensions page and click **Remove**.
