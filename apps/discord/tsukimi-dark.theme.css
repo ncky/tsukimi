@@ -1,0 +1,243 @@
+/* ───────────────────────────────────────────────────────────────
+   Tsukimi Dark (Discord) — base-variable theme (Vencord/BetterDiscord)
+   Palette:
+     bg  #0d0e12 (graphite)
+     fg  #f0ebe5
+     accent #cdb195 (moonlit gold)
+     surface #161a22 / #252A36 (midnight blue)
+     umber #6E4F47
+   ─────────────────────────────────────────────────────────────── */
+
+:is(.theme-dark, .visual-refresh.theme-dark, .visual-refresh .theme-dark) {
+    /* Core palette helpers */
+    --tsu-ink: #0d0e12;
+    --tsu-bg: #0d0e12;
+    --tsu-bg-alt: #0a0b0f;
+    --tsu-frame: #0d0e12;
+    --tsu-surface: #0d0e12;
+    --tsu-surface-2: #0d0e12;
+    --tsu-border: #0d0e12;
+
+    --tsu-text: #f0ebe5;
+    --tsu-text-2: #e3ded8;
+    --tsu-muted: #b8b3aa;
+    --tsu-faint: #8a8a90;
+
+    --tsu-accent: #cdb195;
+    --tsu-accent-hover: #d9c3ab;
+    --tsu-accent-active: #c1a98f;
+
+    --tsu-success: #aac098;
+    --tsu-warning: #e5d5b8;
+    --tsu-danger: #aa7a6a;
+    --tsu-info: #9aafca;
+    --tsu-link: #7a8faa;
+
+    /* ── Brand (Discord "blurple") → Tsukimi gold ── */
+    --brand-experiment: var(--tsu-accent);
+    --bg-brand: var(--tsu-accent);
+    --brand: var(--tsu-accent); /* some components reference --brand */
+
+    /* A small, useful brand scale (covers hover/active cases) */
+    --brand-360: #f5f0e8;
+    --brand-400: #e8dfd0;
+    --brand-430: #e0d5c5;
+    --brand-460: #d9c3ab;
+    --brand-500: #cdb195 !important;
+    --brand-530: #c1a98f;
+    --brand-560: #b59d83;
+    --brand-600: #aa9278;
+    --brand-630: #9e876c;
+    --brand-660: #927c61;
+
+    /* Brand alphas used around Discord */
+    --brand-05a: rgba(205, 177, 149, 0.05);
+    --brand-10a: rgba(205, 177, 149, 0.1);
+    --brand-15a: rgba(205, 177, 149, 0.15);
+    --brand-20a: rgba(205, 177, 149, 0.2);
+    --brand-25a: rgba(205, 177, 149, 0.25);
+    --brand-30a: rgba(205, 177, 149, 0.3);
+
+    /* Legacy “blurple” helpers → brand */
+    --blurple-50: var(--brand-500);
+    --opacity-blurple-8: rgba(205, 177, 149, 0.08);
+    --opacity-blurple-16: rgba(205, 177, 149, 0.16);
+    --opacity-blurple-24: rgba(205, 177, 149, 0.24);
+    --opacity-blurple-32: rgba(205, 177, 149, 0.32);
+    --opacity-blurple-60: rgba(205, 177, 149, 0.6);
+
+    /* ── Text ── */
+    --header-primary: var(--tsu-text) !important;
+    --header-secondary: var(--tsu-muted) !important;
+
+    --text-normal: var(--tsu-text) !important;
+    --text-default: var(--tsu-text);
+    --text-muted: var(--tsu-muted) !important;
+
+    --text-link: var(--tsu-accent) !important;
+    --text-link-low-saturation: var(--tsu-link);
+
+    --interactive-normal: var(--tsu-text) !important;
+    --interactive-hover: var(--tsu-text) !important;
+    --interactive-active: var(--tsu-text) !important;
+    --interactive-muted: #9a9690;
+
+    --channels-default: #9a9690 !important;
+    --channel-icon: #9a9690 !important;
+
+    /* ── Backgrounds / Surfaces ── */
+    --app-background-frame: var(--tsu-frame);
+
+    --background-primary: var(--tsu-bg) !important;
+    --background-secondary: var(--tsu-surface) !important;
+    --background-secondary-alt: var(--tsu-bg-alt) !important;
+    --background-tertiary: var(--tsu-frame) !important;
+
+    --background-accent: var(--tsu-surface-2) !important;
+    --background-floating: var(--tsu-surface) !important;
+
+    /* Visual Refresh newer surface vars (keeps panels consistent) */
+    --background-base-lowest: var(--tsu-frame) !important;
+    --background-base-lower: var(--tsu-bg-alt) !important;
+    --background-base-low: var(--tsu-bg) !important;
+
+    --background-surface-high: var(--tsu-bg) !important;
+    --background-surface-higher: #0d0e12 !important;
+    --background-surface-highest: var(--tsu-surface-2) !important;
+
+    --bg-base-secondary: var(--tsu-surface);
+    --bg-base-tertiary: var(--tsu-frame) !important;
+    --bg-surface-overlay: #0d0e12;
+    --bg-surface-raised: var(--tsu-surface);
+    --bg-overlay-floating: var(--tsu-bg-alt);
+
+    --__header-bar-background: var(--tsu-surface) !important;
+    --chat-background: var(--tsu-bg);
+    --chat-border: var(--tsu-surface-2);
+
+    /* ── Modifiers (hover/selected) ── */
+    --background-modifier-hover: rgba(205, 177, 149, 0.1);
+    --background-modifier-selected: rgba(205, 177, 149, 0.15);
+    --background-modifier-active: rgba(205, 177, 149, 0.12);
+    --background-modifier-accent: rgba(205, 177, 149, 0.2);
+
+    /* ── Inputs ── */
+    --input-background: var(--tsu-surface);
+    --channeltextarea-background: var(--tsu-surface);
+
+    /* ── Scrollbars ── */
+    --scrollbar-thin-thumb: var(--tsu-accent);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: var(--tsu-accent);
+    --scrollbar-auto-track: var(--tsu-surface-2);
+
+    /* ── Status colors ── */
+    --status-positive: var(--tsu-success);
+    --status-warning: var(--tsu-warning);
+    --status-danger: var(--tsu-danger);
+
+    --status-positive-background: var(--tsu-success);
+    --status-warning-background: var(--tsu-warning);
+    --status-danger-background: var(--tsu-danger);
+
+    --status-positive-text: var(--tsu-ink);
+    --status-warning-text: var(--tsu-ink);
+    --status-danger-text: var(--tsu-ink);
+
+    /* ── Mentions / highlights ── */
+    --mention-foreground: var(--tsu-accent);
+    --mention-background: rgba(205, 177, 149, 0.1);
+    --background-mentioned: rgba(229, 213, 184, 0.08);
+    --background-mentioned-hover: rgba(229, 213, 184, 0.05);
+
+    --background-message-hover: rgba(22, 26, 34, 0.3) !important;
+
+    /* ── Buttons (make brand filled buttons readable) ── */
+    --button-filled-brand-background: var(--brand-500);
+    --button-filled-brand-background-hover: var(--tsu-accent-hover);
+    --button-filled-brand-background-active: var(--tsu-accent-active);
+    --button-filled-brand-text: var(--tsu-ink);
+    --button-filled-brand-text-hover: var(--tsu-ink);
+    --button-filled-brand-text-active: var(--tsu-ink);
+
+    --button-danger-background: var(--tsu-danger);
+    --button-danger-background-hover: #b98878;
+    --button-danger-background-active: #91685b;
+
+    --button-positive-background: var(--tsu-success);
+    --button-positive-background-hover: #bcd5a8;
+    --button-positive-background-active: #9db588;
+
+    --button-secondary-background: var(--tsu-surface-2);
+    --button-secondary-background-hover: #2f3546;
+    --button-secondary-background-active: #1e2330;
+    --button-secondary-text: var(--tsu-text);
+
+    /* ── Badges (this helps the APP/BOT tag globally if it uses these vars) ── */
+    --badge-brand-bg: var(--brand-500);
+    --badge-brand-text: var(--tsu-ink);
+
+    /* ── Focus ── */
+    --focus-primary: var(--tsu-accent);
+
+    /* ── Legacy palette hooks (some UI bits still reference these) ── */
+    --white: var(--tsu-text);
+    --white-500: var(--tsu-text);
+    --black-500: var(--tsu-ink);
+}
+
+/* Selection highlight: match Kitty selection (midnight blue) */
+:is(.theme-dark, .visual-refresh.theme-dark, .visual-refresh .theme-dark)
+    ::selection {
+    background-color: rgba(37, 42, 54, 0.85);
+    color: #f0ebe5;
+}
+
+/* ───────────────────────────────────────────────────────────────
+   FIX 1: “new messages since …” bar (gold bg needs dark ink text)
+   ─────────────────────────────────────────────────────────────── */
+:is(.theme-dark, .visual-refresh.theme-dark, .visual-refresh .theme-dark)
+    div[class*="newMessagesBar"] {
+    background-color: var(--brand-500) !important;
+    color: var(--tsu-ink) !important;
+
+    /* Many inner nodes use vars, so force them too */
+    --white: var(--tsu-ink);
+    --white-500: var(--tsu-ink);
+    --text-normal: var(--tsu-ink);
+    --header-primary: var(--tsu-ink);
+    --interactive-normal: var(--tsu-ink);
+}
+
+:is(.theme-dark, .visual-refresh.theme-dark, .visual-refresh .theme-dark)
+    div[class*="newMessagesBar"]
+    * {
+    color: var(--tsu-ink) !important;
+}
+
+:is(.theme-dark, .visual-refresh.theme-dark, .visual-refresh .theme-dark)
+    div[class*="newMessagesBar"]
+    :is(svg, svg path) {
+    fill: var(--tsu-ink) !important;
+    color: var(--tsu-ink) !important;
+}
+
+/* ───────────────────────────────────────────────────────────────
+   FIX 2: “APP” tag next to automated/bot messages (gold bg + ink text)
+   ─────────────────────────────────────────────────────────────── */
+:is(.theme-dark, .visual-refresh.theme-dark, .visual-refresh .theme-dark)
+    :is(span[class*="botTag"], span[class*="appTag"]) {
+    background-color: var(--brand-500) !important;
+    color: var(--tsu-ink) !important;
+    border-color: transparent !important;
+
+    /* Some versions rely on these vars */
+    --white: var(--tsu-ink);
+    --white-500: var(--tsu-ink);
+}
+
+:is(.theme-dark, .visual-refresh.theme-dark, .visual-refresh .theme-dark)
+    :is(span[class*="botTag"], span[class*="appTag"])
+    :is(svg, svg path) {
+    fill: var(--tsu-ink) !important;
+}

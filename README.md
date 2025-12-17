@@ -17,3 +17,4 @@
 - `opencode`
 - `stylus` (browser extension)
 - `steam` (MetroSteam patcher)
+- `discord`
