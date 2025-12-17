@@ -16,3 +16,4 @@
 - `gtk3.0` (GTK 3)
 - `opencode`
 - `stylus` (browser extension)
+- `steam` (MetroSteam patcher)
