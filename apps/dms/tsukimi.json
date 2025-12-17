@@ -19,6 +19,7 @@
     "error": "#aa7a6a",
     "warning": "#cdb195",
     "info": "#6a7a9a",
+    "success": "#8a9a80",
     "matugen_type": "scheme-expressive"
   },
   "light": {
